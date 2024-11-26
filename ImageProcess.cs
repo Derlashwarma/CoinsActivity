@@ -13,7 +13,7 @@ namespace CoinsActivity
         {
             if (a == null)
             {
-                throw new ArgumentNullException(nameof(a), "Input bitmap cannot be null.");
+                MessageBox.Show("No images have been loaded");
             }
 
             using (Mat originalMat = BitmapConverter.ToMat(a))
